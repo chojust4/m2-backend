@@ -1,5 +1,6 @@
 var express = require("express")
 var app = express()
+var dns = require("dns")
 
 app.use(express.json())
 
@@ -16,7 +17,9 @@ app.get("/", (req, res) => {
 })
 
 app.get("/address", (req, res) => {
-    res.send("ip address: " + server.address().address)
+    dns.lookup(require('os').hostname(), function (err, add, fam) {
+        res.send("ip address: " + add)
+      })
 })
 app.get("/time", (req, res) => {
     let hours = date_time.getHours();
