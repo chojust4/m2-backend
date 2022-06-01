@@ -1,0 +1,22 @@
+{
+  "name": "m2-backend",
+  "version": "1.0.0",
+  "description": "cpen 321 m2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chojust4/m2-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chojust4/m2-backend/issues"
+  },
+  "homepage": "https://github.com/chojust4/m2-backend#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
