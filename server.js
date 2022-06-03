@@ -10,8 +10,6 @@ var server = app.listen(8080, (req, res) => {
     console.log("m2 api successfully running on host: %s and port %s", host, port)
 })
 
-var date_time = new Date();
-
 app.get("/", (req, res) => {
     res.send("m2 node js api")
 })
@@ -22,6 +20,7 @@ app.get("/address", (req, res) => {
       })
 })
 app.get("/time", (req, res) => {
+    var date_time = new Date();
     let hours = date_time.getHours();
     let minutes = date_time.getMinutes();
     let seconds = date_time.getSeconds();
